@@ -1,19 +1,37 @@
-# Maze-Game-Development
+# Model Performance Comparison
 
-## Overview
-This repository provides an API for real-time hand gesture classification, designed to be integrated into interactive applications such as games. The core of the system is a machine learning model served using FastAPI, enabling efficient and scalable inference.
+This project compares the performance of four different machine learning classifiers:
 
-## Features
+- SVM
+- Decision Tree
+- Random Forest
+- XGBoost
 
-- **Monitoring & Observability:**
-  - **Prometheus Metrics Exposure:** The API exposes Prometheus-compatible metrics at `/metrics` for real-time monitoring of model, data, and server health.
-  - **Grafana Dashboard:** A sample `dashboard.json` is included for visualizing key metrics in Grafana.
-  - **Three Key Metrics:**
-    - **Model Metric:** The letancy of prediction, to ensure the real-time performance and avoid any bottelneck by taking consedring the latency Vs model complexity tradoff.
-    - **Data Metric:** Data drift monitoring by track the landmarks' coordinates distribution.
-    - **Server Metric:** Request latency logging to ensure API performance, identify bottlenecks and to identify the proper rate for rendering the game.
+The evaluation is based on the following metrics:
+- **Accuracy**
+- **F1 Score**
+- **Precision**
+- **Recall**
 
+## Performance Visualization
 
-## Monitoring & Observability
-- **Prometheus Metrics:** Access at `http://localhost:8000/metrics` when running locally or via Docker Compose.
-- **Grafana Dashboard:** Import the provided `dashboard.json` into Grafana to visualize model prediction latency, data drift, and server latency metrics.
+![Model Metrics Comparison](https://i.ibb.co/LXH7RV7r/Screenshot-2025-06-03-124130.png)
+
+## Metric Comparison Table
+
+| Model               | Accuracy | F1 Score | Precision | Recall |
+|---------------------|----------|----------|-----------|--------|
+| SVM                 | 0.93     | 0.93     | 0.93      | 0.93   |
+| Decision Tree       | 0.94     | 0.94     | 0.94      | 0.94   |
+| Random Forest       | 0.97     | 0.97     | 0.97      | 0.97   |
+| XGBoost             | 0.98     | 0.98     | 0.98      | 0.98   |
+
+## Summary
+
+- **XGBoost** outperforms all other models across all metrics.
+- **Random Forest** is a close second, with strong performance.
+- **Decision Tree** and **SVM** are suitable for simpler tasks but underperform relative to ensemble methods like Random Forest and XGBoost.
+
+## License
+
+This project is provided for educational purposes.
