@@ -16,4 +16,4 @@ This repository provides an API for real-time hand gesture classification, desig
 
 ## Monitoring & Observability
 - **Prometheus Metrics:** Access at `http://localhost:8000/metrics` when running locally or via Docker Compose.
-- **Grafana Dashboard:** Import the provided `dashboard.json` into Grafana to visualize model confidence, data drift, and latency metrics.
+- **Grafana Dashboard:** Import the provided `dashboard.json` into Grafana to visualize model prediction latency, data drift, and server latency metrics.
