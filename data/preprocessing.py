@@ -33,7 +33,7 @@ def preprocess_data(df, test_size=0.2, random_state=42):
 
     # after normalization, Zs components have zero mean and std as shown above in data description.
     normalized_data = normalized_data.drop([f"z{i}" for i in range(2,22)], axis=1)
-
+    
 
     # Split data
     X_train_scaled, X_test_scaled, y_train, y_test = train_test_split(normalized_data, y_encoded, test_size=test_size, random_state=random_state)    

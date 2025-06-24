@@ -1,0 +1,15 @@
+artifact_uri: file:c:\Me\ITI\MLOps\Final_Project\Maze-Game-Development\saved_models\mlruns/546622435165624839/5ecfff984cfe43f9b4af35633dc2248e/artifacts
+end_time: 1748944956944
+entry_point_name: ''
+experiment_id: '546622435165624839'
+lifecycle_stage: active
+run_id: 5ecfff984cfe43f9b4af35633dc2248e
+run_name: svm_training
+run_uuid: 5ecfff984cfe43f9b4af35633dc2248e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748944949585
+status: 3
+tags: []
+user_id: moati

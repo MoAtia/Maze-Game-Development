@@ -1,0 +1,15 @@
+artifact_uri: file:c:\Me\ITI\MLOps\Final_Project\Maze-Game-Development\saved_models\mlruns/546622435165624839/75ce35fff3c644d9ad1c9183e9aa5d4b/artifacts
+end_time: 1748816547196
+entry_point_name: ''
+experiment_id: '546622435165624839'
+lifecycle_stage: active
+run_id: 75ce35fff3c644d9ad1c9183e9aa5d4b
+run_name: decision_tree_training
+run_uuid: 75ce35fff3c644d9ad1c9183e9aa5d4b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748816538066
+status: 3
+tags: []
+user_id: moati

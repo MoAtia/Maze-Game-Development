@@ -6,9 +6,12 @@ from models.evaluate import evaluate_model
 from models.save_load import save_model
 from utils.seeds import set_seeds
 from config import TEST_SIZE, RANDOM_STATE
-
+from utils.tracking import setup_mlflow
 
 def main():
+    # Initialize MLflow
+    setup_mlflow()
+
     # Set random seeds
     set_seeds()
     
@@ -24,7 +27,10 @@ def main():
     X_train, X_test, y_train, y_test, encoder = preprocess_data(df, test_size=TEST_SIZE, random_state=RANDOM_STATE)
     
     # Train models
-    trained_models = train_models(X_train, y_train)
+    trained_models, results = train_models(
+        X_train, y_train, X_test, y_test, track_experiment=True
+    )
+
     
     # Evaluate models
     for name, model in trained_models.items():

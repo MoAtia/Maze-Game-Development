@@ -1,0 +1,15 @@
+artifact_uri: file:c:\Me\ITI\MLOps\Final_Project\Maze-Game-Development\saved_models\mlruns/546622435165624839/804233903e924c9e908b778dd24bb54a/artifacts
+end_time: 1748816579935
+entry_point_name: ''
+experiment_id: '546622435165624839'
+lifecycle_stage: active
+run_id: 804233903e924c9e908b778dd24bb54a
+run_name: xgboost_training
+run_uuid: 804233903e924c9e908b778dd24bb54a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748816570203
+status: 3
+tags: []
+user_id: moati

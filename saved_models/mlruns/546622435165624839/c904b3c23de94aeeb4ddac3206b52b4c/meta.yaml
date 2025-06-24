@@ -1,0 +1,15 @@
+artifact_uri: file:c:\Me\ITI\MLOps\Final_Project\Maze-Game-Development\saved_models\mlruns/546622435165624839/c904b3c23de94aeeb4ddac3206b52b4c/artifacts
+end_time: 1748945037045
+entry_point_name: ''
+experiment_id: '546622435165624839'
+lifecycle_stage: active
+run_id: c904b3c23de94aeeb4ddac3206b52b4c
+run_name: random_forest_training
+run_uuid: c904b3c23de94aeeb4ddac3206b52b4c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748945005295
+status: 3
+tags: []
+user_id: moati
